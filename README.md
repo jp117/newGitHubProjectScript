@@ -2,7 +2,10 @@
 
 Write a bash script that uses github api to start a github project
 
--   Bash command to run the script from terminal (ie newgithub xyz will make a new directory xyz then a new repository named xyz)
+### To use yourself:
+
+1. Create a file "creds" and paste your personal API token as TOKEN={token} and USERNAME={github username} and CPUUSER={homeFolderUsername}
+2. amend directory as needed for your system
 
 ---
 
@@ -11,5 +14,6 @@ Write a bash script that uses github api to start a github project
 -   ~~Bash Script which makes folder~~
 -   ~~Bash connects to API and makes new repo~~
 -   ~~Bash script makes markdown file~~
--   First commit / push
--   Open VScode in the directory
+-   ~~First commit / push~~
+-   ~~Open VScode in the directory~~
+# test
