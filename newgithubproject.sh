@@ -5,18 +5,16 @@
 directory=$1
 project=$2
 
-mkdir -p  /home/jparadise/programming/$1/$2
-cd /home/jparadise/programming/$1/$2
+mkdir -p  /home/$CPUUSER/programming/$1/$2
+cd /home/$CPUUSER/programming/$1/$2
 
-#pipenv run python app.py
-
-curl -H "Authroization: token <$TOKEN>"
-
-curl -X POST -u jp117:$TOKEN https://api.github.com/user/repos -d "{\"name\":\"$project\"}"
+curl -X POST -u $USERNAME:$TOKEN https://api.github.com/user/repos -d "{\"name\":\"$project\"}"
 echo "# $project" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/jp117/$project.git
+git remote add origin git@github.com:$USERNAME/$project.git
 git push -u origin main
+
+code .

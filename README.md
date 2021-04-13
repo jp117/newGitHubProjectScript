@@ -16,5 +16,3 @@ Write a bash script that uses github api to start a github project
 -   ~~Bash script makes markdown file~~
 -   ~~First commit / push~~
 -   ~~Open VScode in the directory~~
-# test
-# test
